@@ -25,24 +25,47 @@ an animation frame variable is created.
 
 ### Scatter plot (static)
 
-![](example_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+The plot is generated from this code.
 
-**Alt text:** A scatter plot of the penguin’s data from the
-palmerpenguin package. The plot has a bill depth (30 to 60mm) on the
-x-axis and a bill length (13 to 22 mm) on the y-axis. There are three
-species of penguins with different colour codes, Adelie (red), Chinstrap
-(green), and Gentoo (blue). The Gentoo penguins have an elliptical shape
-pointing to the top right, with the bill length ranging from 40 to 60 mm
-and bill depth ranging from 13 to 17.5 mm. The Adelie penguins have an
-elliptical shape pointing to the top right, with the bill length ranging
-from 15 to 22 mm and bill depth ranging from 30 to 48 mm. The Chinstrap
-has an elliptical shape pointing to the top right, with the bill length
-ranging from 40 to 60 mm and bill depth ranging from 16 to 22 mm.
+    library(ggplot2)
+    library(broom)
+    cars_lm <- lm(mpg ~ hp, data = mtcars)
+    cars_all <- augment(cars_lm)
+    ggplot(cars_all, aes(x=.fitted, y=.resid)) + 
+      geom_point()
 
-**Caption:** A basic non-interactive plot made with the ggplot2 package
-on palmer penguin data. Three species of penguins are plotted with bill
-depth on the x-axis and bill length on the y-axis. Visit the online
-article to access the interactive version made with the plotly package.
+<img src="figures/resid-plot-1.png" width="40%" />
+
+**Alt text**: Scatterplot of fitted values on the x-axis and residual
+values on the vertical axis. The x-axis has tick marks 10, 15, 20, 25,
+and the y-axis has tick marks -5, 0, 5. There is a slight U-shape
+patterns to the points with one point with lower x-value than others at
+-12.5, and a high y-value of 7.5.
+
+**Caption**: Examining the fit of a linear model of miles per gallon on
+horsepower. Residuals are plotted vertically and fitted values
+horizontally. The pattern suggests some non-linear relationship is not
+captured by the model.
+
+### Boxplot
+
+    library(nullabor)
+    data(electoral)
+    ggplot(electoral$polls, 
+           aes(x=Democrat, 
+               y=Margin)) +
+      geom_boxplot() +
+      theme(aspect.ratio = 1.2, 
+            panel.grid.major.x = element_blank())
+
+<img src="figures/unnamed-chunk-3-1.png" width="100%" />
+
+### Barchart
+
+    ggplot(mpg, aes(class)) +
+      geom_bar(aes(weight = displ))
+
+<img src="figures/unnamed-chunk-4-1.png" width="100%" />
 
 ### Animated visualisation
 

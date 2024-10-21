@@ -47,9 +47,23 @@ ggplot(cars_all, aes(x=.fitted, y=.resid)) +
 
 ### Boxplot
 
+```{r}
+library(nullabor)
+data(electoral)
+ggplot(electoral$polls, 
+       aes(x=Democrat, 
+           y=Margin)) +
+  geom_boxplot() +
+  theme(aspect.ratio = 1.2, 
+        panel.grid.major.x = element_blank())
+```
+
 ### Barchart
 
-
+```{r}
+ggplot(mpg, aes(class)) +
+  geom_bar(aes(weight = displ))
+```
 
 ### Animated visualisation
 
