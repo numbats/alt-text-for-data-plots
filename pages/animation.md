@@ -1,0 +1,5 @@
+### Example
+
+**Alt text:** An animated visualisation with an s-curve shaded area showing the proportion shift from one category (2016) to another (2019). It shows the liberal voters shifting behaviour according to gender identification from the 2016 and 2019 surveys. There are three gender identifications, male, female, and other. Most of the voters remain in the same party where a small fraction of voters with roughly equal male-to-female ratio switch to other major parties such as Labor, Greens, and National. Some decided not to vote. People who identified themselves as other have all shifted to the Green Party.
+
+**Caption:** The wallaby plot visualization shows how the top party performs in keeping the old voters of different genders. Most voters remain loyal to the party, but a small fraction of voters with roughly equal male-to-female ratio switch primarily to the other major party. Interestingly, the few individuals who identified as neither male nor female overwhelmingly shifted their party affiliations to the Green
