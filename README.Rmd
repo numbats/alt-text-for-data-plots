@@ -42,11 +42,15 @@ The basic ingredients for alt text are:
 ## Examples
 
 ```{r}
+#| label: resid-plot
+#| fig-width: 3
+#| fig-height: 3
 library(ggplot2)
 library(broom)
 cars_lm <- lm(mpg ~ hp, data = mtcars)
 cars_all <- augment(cars_lm)
-ggplot(cars_all, aes(x=.fitted, y=.resid)) + geom_point()
+ggplot(cars_all, aes(x=.fitted, y=.resid)) + 
+  geom_point()
 ```
 
 ## Resources

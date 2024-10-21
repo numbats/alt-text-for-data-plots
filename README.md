@@ -51,10 +51,11 @@ library(ggplot2)
 library(broom)
 cars_lm <- lm(mpg ~ hp, data = mtcars)
 cars_all <- augment(cars_lm)
-ggplot(cars_all, aes(x=.fitted, y=.resid)) + geom_point()
+ggplot(cars_all, aes(x=.fitted, y=.resid)) + 
+  geom_point()
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-resid-plot-1.png" width="100%" />
 
 ## Resources
 
