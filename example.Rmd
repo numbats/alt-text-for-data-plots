@@ -45,6 +45,11 @@ ggplot(cars_all, aes(x=.fitted, y=.resid)) +
 
 **Caption**: Examining the fit of a linear model of miles per gallon on horsepower. Residuals are plotted vertically and fitted values horizontally. The pattern suggests some non-linear relationship is not captured by the model.
 
+### Boxplot
+
+### Barchart
+
+
 
 ### Animated visualisation
 
