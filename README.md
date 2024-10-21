@@ -1,7 +1,7 @@
+Some Guidance for Writing `alt text` for Data Plots
+================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# Some Guidance for Writing `alt text` for Data Plots
 
 ## Why?
 
