@@ -41,6 +41,8 @@ The basic ingredients for alt text are:
 
 ## Examples
 
+### Scatterplot 
+
 ```{r}
 #| label: resid-plot
 #| fig-width: 3
@@ -52,6 +54,8 @@ cars_all <- augment(cars_lm)
 ggplot(cars_all, aes(x=.fitted, y=.resid)) + 
   geom_point()
 ```
+
+**Alt text**: Scatterplot 
 
 ## Resources
 
