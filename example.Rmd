@@ -72,8 +72,11 @@ ggplot(electoral$polls,
 #| fig-height: 4
 #| out-width: 40%
 ggplot(mpg, aes(x=class, weight = displ)) +
-  geom_bar()
+  geom_bar() +
+  coord_flip()
 ```
+
+**Alt text**: Bar chart of numbers of different classes of vehicles. 
 
 ### Animated visualisation
 

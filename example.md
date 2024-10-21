@@ -69,9 +69,12 @@ for TRUE and around 45 for FALSE.
 ### Barchart
 
     ggplot(mpg, aes(x=class, weight = displ)) +
-      geom_bar()
+      geom_bar() +
+      coord_flip()
 
 <img src="figures/barchart-1.png" width="40%" />
+
+**Alt text**: Bar chart of numbers of different classes of vehicles.
 
 ### Animated visualisation
 
