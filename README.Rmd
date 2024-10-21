@@ -43,7 +43,7 @@ The basic ingredients for alt text are:
 
 ## Examples
 
-The examples are organised to show what would be written for some common plots, in both `alt text` and a `caption`. Below is one example, shown with different additions, and there are more examples available in the [Examples](examples.html) page.
+The examples are organised to show what would be written for some common plots, in both `alt text` and a `caption`. Below is one example, shown with different additions, and there are more examples available in the [Examples](https://numbats.github.io/alt-text-for-data-plots/examples.html) page.
 
 ### Static scatterplot 
 
