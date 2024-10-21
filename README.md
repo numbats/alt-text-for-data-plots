@@ -1,5 +1,6 @@
 Some Guidance for Writing `alt text` for Data Plots
 ================
+Krisanat Anukarnsakulchularp and Di Cook
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 

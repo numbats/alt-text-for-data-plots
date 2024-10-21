@@ -1,5 +1,6 @@
 ---
 title: "Some Guidance for Writing `alt text` for Data Plots"
+author: "Krisanat Anukarnsakulchularp and Di Cook"
 output: github_document
 always_allow_html: true
 ---
