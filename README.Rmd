@@ -7,8 +7,10 @@ output: github_document
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE, comment = "#>", eval = FALSE,
-  fig.path = "man/figures/README-", out.width = "100%"
+  collapse = TRUE, 
+  comment = "#>", 
+  fig.path = "man/figures/README-", 
+  out.width = "100%"
 )
 ```
 
@@ -41,6 +43,7 @@ The basic ingredients for alt text are:
 
 ```{r}
 library(ggplot2)
+library(broom)
 cars_lm <- lm(mpg ~ hp, data = mtcars)
 cars_all <- augment(cars_lm)
 ggplot(cars_all, aes(x=.fitted, y=.resid)) + geom_point()
