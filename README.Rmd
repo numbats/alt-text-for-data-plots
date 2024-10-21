@@ -91,7 +91,7 @@ Adding mouse-over labels for scatterplots can help with providing more informati
 #| fig-height: 4
 #| out-width: 60%
 library(plotly)
-ggplotly(p, width=500, height=400)
+print(ggplotly(p, width=500, height=400))
 ```
 
 Generally, additional `label` details to the `aes()` in ggplot, or using `ggplotly()` parameters, provides more careful details of what to show on the pop-up text. Using sound to speak the label might make if even more accessible, like the [Vowel explorer](https://petergill.shinyapps.io/shinyplay/).
