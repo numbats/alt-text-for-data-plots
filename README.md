@@ -70,7 +70,7 @@ p
 #> (`geom_point()`).
 ```
 
-<img src="figures/README-penguins-1.png" width="40%" />
+<img src="figures/README-penguins-1.png" width="60%" />
 
 **Alt text:** A scatter plot of the penguin’s data from the
 palmerpenguin package. The plot has a bill depth (30 to 60mm) on the

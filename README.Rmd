@@ -50,9 +50,9 @@ The plot is generated from this code.
 
 ```{r}
 #| label: penguins
-#| fig-width: 4
+#| fig-width: 5
 #| fig-height: 4
-#| out-width: 40%
+#| out-width: 60%
 library(ggplot2)
 library(palmerpenguins)
 p <- penguins |>  
@@ -78,6 +78,8 @@ The [BrailleR](http://ajrgodfrey.github.io/BrailleR/index.html) package provides
 library(BrailleR)
 VI(p)
 ```
+
+There are some differences to the alt text manually written. 
 
 ## Resources
 
