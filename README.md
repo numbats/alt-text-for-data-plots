@@ -70,7 +70,7 @@ p <- penguins |>
 p
 ```
 
-<img src="figures/README-penguins-1.png" width="60%" />
+<img src="figures/README-penguins-1.png" alt="A scatter plot of the penguin's data from the palmerpenguin package. The plot has a bill depth (30 to 60mm) on the x-axis and a bill length (13 to 22 mm) on the y-axis. There are three species of penguins with different colour codes, Adelie (red), Chinstrap (green), and Gentoo (blue). The Gentoo penguins have an elliptical shape pointing to the top right, with the bill length ranging from 40 to 60 mm and bill depth ranging from 13 to 17.5 mm. The Adelie penguins have an elliptical shape pointing to the top right, with the bill length ranging from 15 to 22 mm and bill depth ranging from 30 to 48 mm. The Chinstrap has an elliptical shape pointing to the top right, with the bill length ranging from 40 to 60 mm and bill depth ranging from 16 to 22 mm." width="60%" />
 
 **Alt text:** A scatter plot of the penguin’s data from the
 palmerpenguin package. The plot has a bill depth (30 to 60mm) on the

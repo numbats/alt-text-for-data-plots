@@ -6,7 +6,8 @@ Krisanat Anukarnsakulchularp and Di Cook
 
 ### Data diagram
 
-![](figures/diagram.png)
+<img src="figures/diagram.png"
+alt="A diagram showing the data processing step starting from the raw to categorized and ending with animated data structure. There are three tables, Raw data, Categorized data, and Animated data. The Raw data have three columns, id, time, and values. It then got converted to a Categorized structure with three columns id, time, and values. The difference is the values column is in numerical format for the raw data structure, whereas values for the categorized structure are categorical variables. The last structure is called Animated data which is the transformation from the categorized data. There are four columns, id, time, qtile, and frame. The qtile column represents the category and the frame is assigned based on the unique ID." />
 
 **Alt text:** A diagram showing the data processing step starting from
 the raw to categorized and ending with animated data structure. There
@@ -40,7 +41,7 @@ ggplot(cars_all, aes(x=.fitted, y=.resid)) +
   geom_point()
 ```
 
-<img src="figures/resid-plot-1.png" width="40%" />
+<img src="figures/resid-plot-1.png" alt="Scatterplot of fitted values on the x-axis and residual values on the vertical axis. The x-axis has tick marks 10, 15, 20, 25, and the y-axis has tick marks -5, 0, 5. There is a slight U-shape patterns to the points with one point with lower x-value than others at -12.5, and a high y-value of 7.5." width="40%" />
 
 **Alt text**: Scatterplot of fitted values on the x-axis and residual
 values on the vertical axis. The x-axis has tick marks 10, 15, 20, 25,
@@ -66,7 +67,7 @@ ggplot(electoral$polls,
         panel.grid.major.x = element_blank())
 ```
 
-<img src="figures/boxplot-1.png" width="40%" />
+<img src="figures/boxplot-1.png" alt="Side-by-side boxplots of vote margin for Democrat=TRUE or FALSE. The the y-axis has tick marks at 0, 25, 50, 75. The median for TRUE is around 12, and for FALSE is around 20. The box for the TRUE is about twice as big that of FALSE. Each group has an outlier, at about 80 for TRUE and around 45 for FALSE." width="40%" />
 
 **Alt text**: Side-by-side boxplots of vote margin for Democrat=TRUE or
 FALSE. The the y-axis has tick marks at 0, 25, 50, 75. The median for
@@ -82,13 +83,14 @@ ggplot(mpg, aes(x=class, weight = displ)) +
   coord_flip()
 ```
 
-<img src="figures/barchart-1.png" width="40%" />
+<img src="figures/barchart-1.png" alt="Bar chart of numbers of different classes of vehicles." width="40%" />
 
 **Alt text**: Bar chart of numbers of different classes of vehicles.
 
 ### Animated visualisation
 
-![](figures/animation.gif)
+<img src="figures/animation.gif"
+alt="An animated visualisation with an s-curve shaded area showing the proportion shift from one category (2016) to another (2019). It shows the liberal voters shifting behaviour according to gender identification from the 2016 and 2019 surveys. There are three gender identifications, male, female, and other. Most of the voters remain in the same party where a small fraction of voters with roughly equal male-to-female ratio switch to other major parties such as Labor, Greens, and National. Some decided not to vote. People who identified themselves as other have all shifted to the Green Party." />
 
 **Alt text:** An animated visualisation with an s-curve shaded area
 showing the proportion shift from one category (2016) to another (2019).
