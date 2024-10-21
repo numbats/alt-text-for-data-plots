@@ -1,4 +1,4 @@
-# Some Guidance for Writing alt text for Data Plots
+# Some Guidance for Writing `alt text` for Data Plots
 
 ## Why?
 
@@ -19,7 +19,9 @@ The basic ingredients for alt text are:
 - What kind of visualization is it (line graph, scatter plot, bar chart...)?
 - What variables are on the axes?
 - What is the range of the data?
-- Some basic patterns visible (points are clustered in the top left and bottom right, )
+- What is the aspect ratio.
+- How are variables mapped to elements such as points, lines, violins or boxplots?
+- What are the visible patterns (points are clustered in the top left and bottom right, lots of variability in size of the boxes of the boxplots, violins show a bimodal pattern, ...) without interpreting them.
 
 
 ## Examples
