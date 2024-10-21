@@ -48,6 +48,10 @@ ggplot(cars_all, aes(x=.fitted, y=.resid)) +
 ### Boxplot
 
 ```{r}
+#| label: boxplot
+#| fig-width: 4
+#| fig-height: 4
+#| out-width: 40%
 library(nullabor)
 data(electoral)
 ggplot(electoral$polls, 
@@ -61,8 +65,12 @@ ggplot(electoral$polls,
 ### Barchart
 
 ```{r}
-ggplot(mpg, aes(class)) +
-  geom_bar(aes(weight = displ))
+#| label: barchart
+#| fig-width: 4
+#| fig-height: 4
+#| out-width: 40%
+ggplot(mpg, aes(x=class, weight = displ)) +
+  geom_bar()
 ```
 
 ### Animated visualisation

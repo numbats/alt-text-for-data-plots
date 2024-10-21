@@ -58,14 +58,14 @@ captured by the model.
       theme(aspect.ratio = 1.2, 
             panel.grid.major.x = element_blank())
 
-<img src="figures/unnamed-chunk-3-1.png" width="100%" />
+<img src="figures/boxplot-1.png" width="40%" />
 
 ### Barchart
 
-    ggplot(mpg, aes(class)) +
-      geom_bar(aes(weight = displ))
+    ggplot(mpg, aes(x=class, weight = displ)) +
+      geom_bar()
 
-<img src="figures/unnamed-chunk-4-1.png" width="100%" />
+<img src="figures/barchart-1.png" width="40%" />
 
 ### Animated visualisation
 
