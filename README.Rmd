@@ -77,9 +77,9 @@ VI(p)
 
 ## Resources
 
-This is a repo that explains how to make alt-text for data plots
+There are many sites describing the purpose of writing alt text. None provides concrete explanations of documenting data plots.  Here is our list of general resources related to alt text: 
 
-- https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81
+- [Liz Hare's presentation](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81)
 - https://lizharedogs.github.io/RLadiesNYAltText/#6
 - https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81
 - https://www.w3.org/WAI/standards-guidelines/wcag/
