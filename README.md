@@ -1,4 +1,4 @@
-# Some guidance for writing alt text for data plots
+# Some Guidance for Writing alt text for Data Plots
 
 ## Why?
 
@@ -10,6 +10,18 @@ Alt text provides a textual alternative to non-text content in HTML documents. I
 - alt text is displayed in place of the figure if it fails to load, or is viewed in a text-based browser. 
 - alt text can assist both general and image-specific search engines.
 
+## Ingredients for writing alt text
+
+The purpose of alt text is to describe what is in a plot for a person who cannot see it. Generally, this means very basic explanation of the elements of the plots. You wouldn't typically interpret the plot, especially if it is also accompanied by a caption. A caption assumes that a person can see the plot, and provides additional context about why it is included and what is the most important thing to learn. Thus, the role of alt text is to provide the details of the plot elements for someone unable ot see it, which would help to make the caption also more understandable. When a caption doesn't exist, then the alt text has to play both roles.
+
+The basic ingredients for alt text are:
+
+- What kind of visualization is it (line graph, scatter plot, bar chart...)?
+- What variables are on the axes?
+- What is the range of the data?
+- Some basic patterns visible (points are clustered in the top left and bottom right, )
+
+
 ## Examples
 
 ## Resources
@@ -18,6 +30,7 @@ This is a repo that explains how to make alt-text for data plots
 
 - https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81
 - https://lizharedogs.github.io/RLadiesNYAltText/#6
+- https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81
 - https://www.w3.org/WAI/standards-guidelines/wcag/
 - https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/
 - https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html
