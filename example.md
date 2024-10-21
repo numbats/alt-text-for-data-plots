@@ -1,8 +1,12 @@
+Example
+================
+Krisanat Anukarnsakulchularp and Di Cook
+
 ## Example
 
 ### Data diagram
 
-![](figures/example2.png)
+![](figures/diagram.png)
 
 **Alt text:** A diagram showing the data processing step starting from
 the raw to categorized and ending with animated data structure. There
@@ -27,12 +31,14 @@ an animation frame variable is created.
 
 The plot is generated from this code.
 
-    library(ggplot2)
-    library(broom)
-    cars_lm <- lm(mpg ~ hp, data = mtcars)
-    cars_all <- augment(cars_lm)
-    ggplot(cars_all, aes(x=.fitted, y=.resid)) + 
-      geom_point()
+``` r
+library(ggplot2)
+library(broom)
+cars_lm <- lm(mpg ~ hp, data = mtcars)
+cars_all <- augment(cars_lm)
+ggplot(cars_all, aes(x=.fitted, y=.resid)) + 
+  geom_point()
+```
 
 <img src="figures/resid-plot-1.png" width="40%" />
 
@@ -49,14 +55,16 @@ captured by the model.
 
 ### Boxplot
 
-    library(nullabor)
-    data(electoral)
-    ggplot(electoral$polls, 
-           aes(x=Democrat, 
-               y=Margin)) +
-      geom_boxplot() +
-      theme(aspect.ratio = 1.2, 
-            panel.grid.major.x = element_blank())
+``` r
+library(nullabor)
+data(electoral)
+ggplot(electoral$polls, 
+       aes(x=Democrat, 
+           y=Margin)) +
+  geom_boxplot() +
+  theme(aspect.ratio = 1.2, 
+        panel.grid.major.x = element_blank())
+```
 
 <img src="figures/boxplot-1.png" width="40%" />
 
@@ -68,9 +76,11 @@ for TRUE and around 45 for FALSE.
 
 ### Barchart
 
-    ggplot(mpg, aes(x=class, weight = displ)) +
-      geom_bar() +
-      coord_flip()
+``` r
+ggplot(mpg, aes(x=class, weight = displ)) +
+  geom_bar() +
+  coord_flip()
+```
 
 <img src="figures/barchart-1.png" width="40%" />
 
@@ -78,7 +88,7 @@ for TRUE and around 45 for FALSE.
 
 ### Animated visualisation
 
-![](figures/example1.gif)
+![](figures/animation.gif)
 
 **Alt text:** An animated visualisation with an s-curve shaded area
 showing the proportion shift from one category (2016) to another (2019).
