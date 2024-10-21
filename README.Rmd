@@ -42,28 +42,38 @@ The basic ingredients for alt text are:
 
 ## Examples
 
-The examples are organised to show what would be written for some common plots, in both `alt text` and a `caption`. 
+The examples are organised to show what would be written for some common plots, in both `alt text` and a `caption`. Below is one example, shown with different additions, and there are more examples available in the [Examples](examples.html) page.
 
-### Scatterplot 
+### Static scatterplot 
 
-The plot is generated from this code. 
+The plot is generated from this code.
 
 ```{r}
-#| label: resid-plot
-#| fig-width: 4
-#| fig-height: 4
-#| out-width: 40%
+#| fig-height: 5
 library(ggplot2)
-library(broom)
-cars_lm <- lm(mpg ~ hp, data = mtcars)
-cars_all <- augment(cars_lm)
-ggplot(cars_all, aes(x=.fitted, y=.resid)) + 
-  geom_point()
+library(palmerpenguins)
+p <- penguins |>  
+  ggplot(aes(x = bill_depth_mm, y = bill_length_mm, 
+             color = species)) + 
+  geom_point() +
+  scale_x_continuous(breaks = seq(13, 22, 2)) +
+  scale_y_continuous(breaks = seq(30, 60, 10),) +
+  theme(aspect.ratio = 1)
+p
 ```
 
-**Alt text**: Scatterplot of fitted values on the x-axis and residual values on the vertical axis. The x-axis has tick marks 10, 15, 20, 25, and the y-axis has tick marks -5, 0, 5. There is a slight U-shape patterns to the points with one point with lower x-value than others at -12.5, and a high y-value of 7.5.
+**Alt text:** A scatter plot of the penguin's data from the palmerpenguin package. The plot has a bill depth (30 to 60mm) on the x-axis and a bill length (13 to 22 mm) on the y-axis. There are three species of penguins with different colour codes, Adelie (red), Chinstrap (green), and Gentoo (blue). The Gentoo penguins have an elliptical shape pointing to the top right, with the bill length ranging from 40 to 60 mm and bill depth ranging from 13 to 17.5 mm. The Adelie penguins have an elliptical shape pointing to the top right, with the bill length ranging from 15 to 22 mm and bill depth ranging from 30 to 48 mm. The Chinstrap has an elliptical shape pointing to the top right, with the bill length ranging from 40 to 60 mm and bill depth ranging from 16 to 22 mm.
 
-**Caption**: Examining the fit of a linear model of miles per gallon on horsepower. Residuals are plotted vertically and fitted values horizontally. The pattern suggests some non-linear relationship is not captured by the model.
+**Caption:** A basic non-interactive plot made with the ggplot2 package on palmer penguin data. Three species of penguins are plotted with bill depth on the x-axis and bill length on the y-axis. Visit the online article to access the interactive version made with the plotly package.
+
+## Using `BrailleR` to auto-generate
+
+The [BrailleR](http://ajrgodfrey.github.io/BrailleR/index.html) package provides a text description of a plot that is generated using [ggplot2](https://ggplot2.tidyverse.org). Here is the description generated for the plot shown above.
+
+```{r}
+library(BrailleR)
+VI(p)
+```
 
 ## Resources
 
