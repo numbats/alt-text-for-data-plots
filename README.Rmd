@@ -49,7 +49,10 @@ The examples are organised to show what would be written for some common plots, 
 The plot is generated from this code.
 
 ```{r}
-#| fig-height: 5
+#| label: penguins
+#| fig-width: 4
+#| fig-height: 4
+#| out-width: 40%
 library(ggplot2)
 library(palmerpenguins)
 p <- penguins |>  
@@ -71,6 +74,7 @@ p
 The [BrailleR](http://ajrgodfrey.github.io/BrailleR/index.html) package provides a text description of a plot that is generated using [ggplot2](https://ggplot2.tidyverse.org). Here is the description generated for the plot shown above.
 
 ```{r}
+#| message: false
 library(BrailleR)
 VI(p)
 ```
@@ -79,12 +83,11 @@ VI(p)
 
 There are many sites describing the purpose of writing alt text. None provides concrete explanations of documenting data plots.  Here is our list of general resources related to alt text: 
 
-- [Liz Hare's presentation](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81)
-- https://lizharedogs.github.io/RLadiesNYAltText/#6
-- https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81
-- https://www.w3.org/WAI/standards-guidelines/wcag/
-- https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/
-- https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html
+- [Liz Hare's presentation](https://lizharedogs.github.io/RLadiesNYAltText/#6)
+- [Amy Cesal's Medium Post](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218)ef43f81
+- [Matt Russell's blog post on the BrailleR package](https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/)
+- [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [WCAG 2.2 Techniques](https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html)
 
 ## How to contribute
 

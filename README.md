@@ -70,7 +70,7 @@ p
 #> (`geom_point()`).
 ```
 
-<img src="figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="figures/README-penguins-1.png" width="40%" />
 
 **Alt text:** A scatter plot of the penguin’s data from the
 palmerpenguin package. The plot has a bill depth (30 to 60mm) on the
@@ -98,18 +98,6 @@ generated for the plot shown above.
 
 ``` r
 library(BrailleR)
-#> The BrailleR.View,  option is set to FALSE.
-#> 
-#> Attaching package: 'BrailleR'
-#> The following objects are masked from 'package:graphics':
-#> 
-#>     boxplot, hist
-#> The following object is masked from 'package:utils':
-#> 
-#>     history
-#> The following objects are masked from 'package:base':
-#> 
-#>     grep, gsub
 VI(p)
 #> This is an untitled chart with no subtitle or caption.
 #> It has x-axis 'bill_depth_mm' with labels 13, 15, 17, 19 and 21.
@@ -123,14 +111,19 @@ VI(p)
 
 ## Resources
 
-This is a repo that explains how to make alt-text for data plots
+There are many sites describing the purpose of writing alt text. None
+provides concrete explanations of documenting data plots. Here is our
+list of general resources related to alt text:
 
-- <https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81>
-- <https://lizharedogs.github.io/RLadiesNYAltText/#6>
-- <https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81>
-- <https://www.w3.org/WAI/standards-guidelines/wcag/>
-- <https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/>
-- <https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html>
+- [Liz Hare’s
+  presentation](https://lizharedogs.github.io/RLadiesNYAltText/#6)
+- [Amy Cesal’s Medium
+  Post](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218)ef43f81
+- [Matt Russell’s blog post on the BrailleR
+  package](https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/)
+- [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [WCAG 2.2
+  Techniques](https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html)
 
 ## How to contribute
 
