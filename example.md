@@ -1,23 +1,6 @@
 ## Example
 
-Here are some examples of the alt text based on the types of
-visualisation.
-
-### Example 1: Animated visualisation
-
-![](figures/example1.gif)
-
-**Alt text:** An animated visualisation with an s-curve shaded area
-showing the proportion shift from one category (2016) to another (2019).
-It shows the liberal voters shifting behaviour according to gender
-identification from the 2016 and 2019 surveys. There are three gender
-identifications, male, female, and other. Most of the voters remain in
-the same party where a small fraction of voters with roughly equal
-male-to-female ratio switch to other major parties such as Labor,
-Greens, and National. Some decided not to vote. People who identified
-themselves as other have all shifted to the Green Party.
-
-### Example 2
+### Data diagram
 
 ![](figures/example2.png)
 
@@ -33,7 +16,14 @@ transformation from the categorized data. There are four columns, id,
 time, qtile, and frame. The qtile column represents the category and the
 frame is assigned based on the unique ID.
 
-### Example 3
+**Caption:** The animation expects data with an ID and a time variable,
+along with a numerical variable (raw form), which is possibly converted
+to categorical (categorized). The data can be provided in the raw or
+categorized form and will be processed into the format needed for the
+animation, where the categorical variable is treated as a quantile and
+an animation frame variable is created.
+
+### Scatter plot (static)
 
 ![](example_files/figure-markdown_strict/unnamed-chunk-2-1.png)
 
@@ -48,3 +38,29 @@ elliptical shape pointing to the top right, with the bill length ranging
 from 15 to 22 mm and bill depth ranging from 30 to 48 mm. The Chinstrap
 has an elliptical shape pointing to the top right, with the bill length
 ranging from 40 to 60 mm and bill depth ranging from 16 to 22 mm.
+
+**Caption:** A basic non-interactive plot made with the ggplot2 package
+on palmer penguin data. Three species of penguins are plotted with bill
+depth on the x-axis and bill length on the y-axis. Visit the online
+article to access the interactive version made with the plotly package.
+
+### Animated visualisation
+
+![](figures/example1.gif)
+
+**Alt text:** An animated visualisation with an s-curve shaded area
+showing the proportion shift from one category (2016) to another (2019).
+It shows the liberal voters shifting behaviour according to gender
+identification from the 2016 and 2019 surveys. There are three gender
+identifications, male, female, and other. Most of the voters remain in
+the same party where a small fraction of voters with roughly equal
+male-to-female ratio switch to other major parties such as Labor,
+Greens, and National. Some decided not to vote. People who identified
+themselves as other have all shifted to the Green Party.
+
+**Caption:** The wallaby plot visualization shows how the top party
+performs in keeping the old voters of different genders. Most voters
+remain loyal to the party, but a small fraction of voters with roughly
+equal male-to-female ratio switch primarily to the other major party.
+Interestingly, the few individuals who identified as neither male nor
+female overwhelmingly shifted their party affiliations to the Greens.
