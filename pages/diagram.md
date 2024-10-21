@@ -1,0 +1,5 @@
+### Example
+
+**Alt text:** A diagram showing the data processing step starting from the raw to categorized and ending with animated data structure. There are three tables, Raw data, Categorized data, and Animated data. The Raw data have three columns, id, time, and values. It then got converted to a Categorized structure with three columns id, time, and values. The difference is the values column is in numerical format for the raw data structure, whereas values for the categorized structure are categorical variables. The last structure is called Animated data which is the transformation from the categorized data. There are four columns, id, time, qtile, and frame. The qtile column represents the category and the frame is assigned based on the unique ID.
+
+**Caption:** The animation expects data with an ID and a time variable, along with a numerical variable (raw form), which is possibly converted to categorical (categorized). The data can be provided in the raw or categorized form and will be processed into the format needed for the animation, where the categorical variable is treated as a quantile and an animation frame variable is created. 
