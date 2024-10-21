@@ -79,7 +79,22 @@ library(BrailleR)
 VI(p)
 ```
 
-There are some differences to the alt text manually written. 
+There are some differences to the alt text manually written. This is focused on how the plot is constructed, which matches half of the content. The missing part is the description of the patterns that can be seen, which is very difficult to automate.
+
+### Interactive elements can enhance accessibility
+
+Adding mouse-over labels for scatterplots can help with providing more information on demand. 
+
+```{r}
+#| label: penguins
+#| fig-width: 5
+#| fig-height: 4
+#| out-width: 60%
+library(plotly)
+ggplotly(p, width=500, height=400)
+```
+
+Generally, additional `label` details to the `aes()` in ggplot, or using `ggplotly()` parameters, provides more careful details of what to show on the pop-up text. Using sound to speak the label might make if even more accessible, like the [Vowel explorer](https://petergill.shinyapps.io/shinyplay/).
 
 ## Resources
 
@@ -90,6 +105,8 @@ There are many sites describing the purpose of writing alt text. None provides c
 - [Matt Russell's blog post on the BrailleR package](https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/)
 - [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
 - [WCAG 2.2 Techniques](https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html)
+- [The DAISY Consortium](https://daisy.org)
+- [latest guidelines](https://www.w3.org/TR/maturity-model/)
 
 ## How to contribute
 
