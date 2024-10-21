@@ -43,10 +43,13 @@ The basic ingredients for alt text are:
 
 ### Scatterplot 
 
+The plot is generated from this code. 
+
 ```{r}
 #| label: resid-plot
-#| fig-width: 3
-#| fig-height: 3
+#| fig-width: 5
+#| fig-height: 5
+#| out-width: 40%
 library(ggplot2)
 library(broom)
 cars_lm <- lm(mpg ~ hp, data = mtcars)

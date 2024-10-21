@@ -48,6 +48,8 @@ The basic ingredients for alt text are:
 
 ### Scatterplot
 
+The plot is generated from this code.
+
 ``` r
 library(ggplot2)
 library(broom)
@@ -57,7 +59,7 @@ ggplot(cars_all, aes(x=.fitted, y=.resid)) +
   geom_point()
 ```
 
-<img src="man/figures/README-resid-plot-1.png" width="100%" />
+<img src="man/figures/README-resid-plot-1.png" width="40%" />
 
 **Alt text**: Scatterplot
 
