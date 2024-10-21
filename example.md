@@ -1,0 +1,50 @@
+## Example
+
+Here are some examples of the alt text based on the types of
+visualisation.
+
+### Example 1: Animated visualisation
+
+![](figures/example1.gif)
+
+**Alt text:** An animated visualisation with an s-curve shaded area
+showing the proportion shift from one category (2016) to another (2019).
+It shows the liberal voters shifting behaviour according to gender
+identification from the 2016 and 2019 surveys. There are three gender
+identifications, male, female, and other. Most of the voters remain in
+the same party where a small fraction of voters with roughly equal
+male-to-female ratio switch to other major parties such as Labor,
+Greens, and National. Some decided not to vote. People who identified
+themselves as other have all shifted to the Green Party.
+
+### Example 2
+
+![](figures/example2.png)
+
+**Alt text:** A diagram showing the data processing step starting from
+the raw to categorized and ending with animated data structure. There
+are three tables, Raw data, Categorized data, and Animated data. The Raw
+data have three columns, id, time, and values. It then got converted to
+a Categorized structure with three columns id, time, and values. The
+difference is the values column is in numerical format for the raw data
+structure, whereas values for the categorized structure are categorical
+variables. The last structure is called Animated data which is the
+transformation from the categorized data. There are four columns, id,
+time, qtile, and frame. The qtile column represents the category and the
+frame is assigned based on the unique ID.
+
+### Example 3
+
+![](example_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+
+**Alt text:** A scatter plot of the penguin’s data from the
+palmerpenguin package. The plot has a bill depth (30 to 60mm) on the
+x-axis and a bill length (13 to 22 mm) on the y-axis. There are three
+species of penguins with different colour codes, Adelie (red), Chinstrap
+(green), and Gentoo (blue). The Gentoo penguins have an elliptical shape
+pointing to the top right, with the bill length ranging from 40 to 60 mm
+and bill depth ranging from 13 to 17.5 mm. The Adelie penguins have an
+elliptical shape pointing to the top right, with the bill length ranging
+from 15 to 22 mm and bill depth ranging from 30 to 48 mm. The Chinstrap
+has an elliptical shape pointing to the top right, with the bill length
+ranging from 40 to 60 mm and bill depth ranging from 16 to 22 mm.
