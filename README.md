@@ -21,3 +21,8 @@ This is a repo that explains how to make alt-text for data plots
 - https://www.w3.org/WAI/standards-guidelines/wcag/
 - https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/
 - https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html
+
+## How to contribute
+
+We welcome contributions! If you have a suggestion or addition please post this as an [issue](https://github.com/numbats/alt-text-for-data-plots/issues) on GitHub.
+
