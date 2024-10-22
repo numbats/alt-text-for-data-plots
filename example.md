@@ -30,8 +30,6 @@ an animation frame variable is created.
 
 ### Scatterplot
 
-The plot is generated from this code.
-
 ``` r
 library(ggplot2)
 library(broom)
@@ -101,7 +99,7 @@ ggplot(mpg, aes(x=class, weight = displ)) +
   xlab("")
 ```
 
-<img src="figures/barchart-1.png" alt="Bar chart of numbers of different classes of vehicles." width="40%" />
+<img src="figures/barchart-1.png" alt="Bar chart of numbers of different classes of vehicles. Counts range from 25 to 275. There are 7 classes of vehicle: suv, pickup, midsize, compact, subcompact, minivan, 2seater, corresponding to the order og highest to lowest count." width="40%" />
 
 **Alt text**: Bar chart of numbers of different classes of vehicles.
 Counts range from 25 to 275. There are 7 classes of vehicle: suv,

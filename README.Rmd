@@ -71,7 +71,7 @@ p
 
 **Caption:** A basic non-interactive plot made with the ggplot2 package on palmer penguin data. Three species of penguins are plotted with bill depth on the x-axis and bill length on the y-axis. Visit the online article to access the interactive version made with the plotly package.
 
-## Using `BrailleR` to auto-generate
+## Using BrailleR to auto-generate
 
 The [BrailleR](http://ajrgodfrey.github.io/BrailleR/index.html) package provides a text description of a plot that is generated using [ggplot2](https://ggplot2.tidyverse.org). Here is the description generated for the plot shown above.
 

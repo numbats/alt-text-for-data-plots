@@ -28,8 +28,6 @@ knitr::opts_chunk$set(
 
 ### Scatterplot 
 
-The plot is generated from this code. 
-
 ```{r}
 #| label: resid-plot
 #| fig-width: 4
@@ -77,7 +75,7 @@ ggplot(electoral$polls,
 #| fig-width: 4
 #| fig-height: 4
 #| out-width: 40%
-#| fig-alt: Bar chart of numbers of different classes of vehicles. 
+#| fig-alt: "Bar chart of numbers of different classes of vehicles. Counts range from 25 to 275. There are 7 classes of vehicle: suv, pickup, midsize, compact, subcompact, minivan, 2seater, corresponding to the order og highest to lowest count."
 library(dplyr)
 mpg <- mpg |>
   mutate(class = factor(class, levels = c("suv", "pickup", "midsize", 
