@@ -80,14 +80,6 @@ There is one democratic state with a massive margin of 80%.
 
 ``` r
 library(dplyr)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 mpg <- mpg |>
   mutate(class = factor(class, levels = c("suv", "pickup", "midsize", 
                           "compact", "subcompact", "minivan", "2seater")))
