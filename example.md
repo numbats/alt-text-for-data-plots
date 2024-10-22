@@ -83,14 +83,33 @@ There is one democratic state with a massive margin of 80%.
 ### Barchart
 
 ``` r
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+mpg <- mpg |>
+  mutate(class = factor(class, levels = c("suv", "pickup", "midsize", 
+                          "compact", "subcompact", "minivan", "2seater")))
 ggplot(mpg, aes(x=class, weight = displ)) +
   geom_bar() +
-  coord_flip()
+  coord_flip() +
+  xlab("")
 ```
 
 <img src="figures/barchart-1.png" alt="Bar chart of numbers of different classes of vehicles." width="40%" />
 
 **Alt text**: Bar chart of numbers of different classes of vehicles.
+Counts range from 25 to 275. There are 7 classes of vehicle: suv,
+pickup, midsize, compact, subcompact, minivan, 2seater, corresponding to
+the order og highest to lowest count.
+
+**Caption**: Examining the relative popularity of different types of
+cars. The most popular is SUV, which is almost twice as many as pickups.
 
 ### Animated visualisation
 
