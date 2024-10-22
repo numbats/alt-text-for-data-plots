@@ -150,7 +150,7 @@ list of general resources related to alt text:
 - [Liz Hare’s
   presentation](https://lizharedogs.github.io/RLadiesNYAltText/#6)
 - [Amy Cesal’s Medium
-  Post](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218)ef43f81
+  Post](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218)
 - [Matt Russell’s blog post on the BrailleR
   package](https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/)
 - [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)

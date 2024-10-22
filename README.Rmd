@@ -103,7 +103,7 @@ Generally, additional `label` details to the `aes()` in ggplot, or using `ggplot
 There are many sites describing the purpose of writing alt text. None provides concrete explanations of documenting data plots.  Here is our list of general resources related to alt text: 
 
 - [Liz Hare's presentation](https://lizharedogs.github.io/RLadiesNYAltText/#6)
-- [Amy Cesal's Medium Post](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218)ef43f81
+- [Amy Cesal's Medium Post](https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218)
 - [Matt Russell's blog post on the BrailleR package](https://arbor-analytics.com/post/2023-06-30-making-r-graphs-more-accessible-using-brailler/)
 - [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
 - [WCAG 2.2 Techniques](https://www.w3.org/WAI/WCAG22/Techniques/html/H69.html)
