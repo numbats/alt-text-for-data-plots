@@ -1,4 +1,4 @@
-Some Guidance for Writing `alt text` for Data Plots
+Some Guidance for Writing alt text for Data Plots
 ================
 Krisanat Anukarnsakulchularp and Di Cook
 
@@ -89,7 +89,7 @@ on palmer penguin data. Three species of penguins are plotted with bill
 depth on the x-axis and bill length on the y-axis. Visit the online
 article to access the interactive version made with the plotly package.
 
-## Using `BrailleR` to auto-generate
+## Using BrailleR to auto-generate
 
 The [BrailleR](http://ajrgodfrey.github.io/BrailleR/index.html) package
 provides a text description of a plot that is generated using
