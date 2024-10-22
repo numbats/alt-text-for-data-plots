@@ -2,8 +2,6 @@ Examples
 ================
 Krisanat Anukarnsakulchularp and Di Cook
 
-## Example
-
 ### Data diagram
 
 <img src="figures/diagram.png"
