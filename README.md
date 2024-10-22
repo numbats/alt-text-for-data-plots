@@ -121,17 +121,6 @@ information on demand.
 
 ``` r
 library(plotly)
-## 
-## Attaching package: 'plotly'
-## The following object is masked from 'package:ggplot2':
-## 
-##     last_plot
-## The following object is masked from 'package:stats':
-## 
-##     filter
-## The following object is masked from 'package:graphics':
-## 
-##     layout
 print(ggplotly(p, width=500, height=400))
 ```
 
