@@ -1,5 +1,5 @@
 ---
-title: Example
+title: Examples
 author: "Krisanat Anukarnsakulchularp and Di Cook"
 output: github_document
 always_allow_html: true
