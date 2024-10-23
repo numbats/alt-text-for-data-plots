@@ -110,9 +110,10 @@ with people represented by dots coloured by their gender identification
 in the 2016 and 2019 surveys. There are three gender identifications,
 male, female, and other. Some Liberal did not vote in 2019.
 
-**Caption**: The wallaby plot visualization shows how the top party
+**Caption**: The wallaby plot visualization shows how the Liberal party
 performs in keeping the old voters of different genders. Most voters
 remain loyal to the party, but a small fraction of voters with roughly
-equal male-to-female ratio switch primarily to the other major party.
-Interestingly, the few individuals who identified as neither male nor
-female overwhelmingly shifted their party affiliations to the Greens.
+equal male-to-female ratio switch primarily to the other major party,
+Labor. Interestingly, the few individuals who identified as neither male
+nor female (red) overwhelmingly shifted their party affiliations to the
+Greens.
