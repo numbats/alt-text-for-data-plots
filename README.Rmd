@@ -71,7 +71,9 @@ p
 
 **Alt text:** A scatter plot of the penguin's data from the palmerpenguin package. The plot has a bill depth (30 to 60mm) on the x-axis and a bill length (13 to 22 mm) on the y-axis. There are three species of penguins with different colour codes, Adelie (red), Chinstrap (green), and Gentoo (blue). The Gentoo penguins have an elliptical shape pointing to the top right, with the bill length ranging from 40 to 60 mm and bill depth ranging from 13 to 17.5 mm. The Adelie penguins have an elliptical shape pointing to the top right, with the bill length ranging from 15 to 22 mm and bill depth ranging from 30 to 48 mm. The Chinstrap has an elliptical shape pointing to the top right, with the bill length ranging from 40 to 60 mm and bill depth ranging from 16 to 22 mm.
 
-**Caption:** A basic non-interactive plot made with the ggplot2 package on palmer penguin data. Three species of penguins are plotted with bill depth on the x-axis and bill length on the y-axis. Visit the online article to access the interactive version made with the plotly package.
+**Caption:** Examining the differences in bill sizes of three species of penguins. Colour indicates species. Gentoo bills are smaller in depth but longer. Chinstrap and Adelie bills have similarly large depth but Chinstrap bills are longer.
+
+There are more examples available in the [Examples](https://numbats.github.io/alt-text-for-data-plots/example.html) page.
 
 ## Using BrailleR to partially auto-generate
 
@@ -84,7 +86,6 @@ VI(p)
 ```
 
 This is focused on how the plot is constructed, which matches half of the content. Note that, there are differences to the alt text we  manually wrote. The missing part is the description of the patterns in the plot that can be seen. This is very difficult to automate. Thus the BrailleR package can provide a start to the alt text but additional information needs to be added.
-
 
 ## Resources
 

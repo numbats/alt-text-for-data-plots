@@ -84,10 +84,14 @@ from 15 to 22 mm and bill depth ranging from 30 to 48 mm. The Chinstrap
 has an elliptical shape pointing to the top right, with the bill length
 ranging from 40 to 60 mm and bill depth ranging from 16 to 22 mm.
 
-**Caption:** A basic non-interactive plot made with the ggplot2 package
-on palmer penguin data. Three species of penguins are plotted with bill
-depth on the x-axis and bill length on the y-axis. Visit the online
-article to access the interactive version made with the plotly package.
+**Caption:** Examining the differences in bill sizes of three species of
+penguins. Colour indicates species. Gentoo bills are smaller in depth
+but longer. Chinstrap and Adelie bills have similarly large depth but
+Chinstrap bills are longer.
+
+There are more examples available in the
+[Examples](https://numbats.github.io/alt-text-for-data-plots/example.html)
+page.
 
 ## Using BrailleR to partially auto-generate
 
