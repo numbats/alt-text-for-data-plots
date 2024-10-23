@@ -116,22 +116,6 @@ the plot that can be seen. This is very difficult to automate. Thus the
 BrailleR package can provide a start to the alt text but additional
 information needs to be added.
 
-### Interactive elements can enhance accessibility
-
-Adding mouse-over labels for scatterplots can help with providing more
-information on demand.
-
-``` r
-library(plotly)
-print(ggplotly(p, width=500, height=400))
-```
-
-Generally, additional `label` details to the `aes()` in ggplot, or using
-`ggplotly()` parameters, provides more careful details of what to show
-on the pop-up text. Using sound to speak the label might make it even
-more accessible, like the [Vowel
-explorer](https://petergill.shinyapps.io/shinyplay/).
-
 ## Resources
 
 There are many sites describing the purpose of writing alt text. None

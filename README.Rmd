@@ -85,20 +85,6 @@ VI(p)
 
 This is focused on how the plot is constructed, which matches half of the content. Note that, there are differences to the alt text we  manually wrote. The missing part is the description of the patterns in the plot that can be seen. This is very difficult to automate. Thus the BrailleR package can provide a start to the alt text but additional information needs to be added.
 
-### Interactive elements can enhance accessibility
-
-Adding mouse-over labels for scatterplots can help with providing more information on demand. 
-
-```{r}
-#| label: interactive-penguins
-#| fig-width: 5
-#| fig-height: 4
-#| out-width: 60%
-library(plotly)
-print(ggplotly(p, width=500, height=400))
-```
-
-Generally, additional `label` details to the `aes()` in ggplot, or using `ggplotly()` parameters, provides more careful details of what to show on the pop-up text. Using sound to speak the label might make it even more accessible, like the [Vowel explorer](https://petergill.shinyapps.io/shinyplay/).
 
 ## Resources
 
