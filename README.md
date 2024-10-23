@@ -9,7 +9,7 @@ Krisanat Anukarnsakulchularp and Di Cook
 Alt text provides a textual alternative to non-text content in HTML
 documents. It serves various purposes:
 
-- it is necessary to for accessibility guidelines.
+- it is necessary for accessibility guidelines.
 - ensures your data visualisations communicate to everybody.
 - assistive technologies can convert alt text into other formats such as
   speech or Braille, providing a description for people using screen
@@ -27,7 +27,7 @@ especially if it is also accompanied by a caption. A caption assumes
 that a person can see the plot, and provides additional context about
 why it is included and what is the most important thing to learn. Thus,
 the role of alt text is to provide the details of the plot elements for
-someone unable ot see it, which would help to make the caption also more
+someone unable to see it, which would help to make the caption also more
 understandable. When a caption doesn’t exist, then the alt text has to
 play both roles.
 
@@ -123,23 +123,12 @@ information on demand.
 
 ``` r
 library(plotly)
-## 
-## Attaching package: 'plotly'
-## The following object is masked from 'package:ggplot2':
-## 
-##     last_plot
-## The following object is masked from 'package:stats':
-## 
-##     filter
-## The following object is masked from 'package:graphics':
-## 
-##     layout
 print(ggplotly(p, width=500, height=400))
 ```
 
 Generally, additional `label` details to the `aes()` in ggplot, or using
 `ggplotly()` parameters, provides more careful details of what to show
-on the pop-up text. Using sound to speak the label might make if even
+on the pop-up text. Using sound to speak the label might make it even
 more accessible, like the [Vowel
 explorer](https://petergill.shinyapps.io/shinyplay/).
 

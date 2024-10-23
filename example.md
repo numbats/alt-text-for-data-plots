@@ -80,14 +80,6 @@ There is one democratic state with a massive margin of 80%.
 
 ``` r
 library(dplyr)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 mpg <- mpg |>
   mutate(class = factor(class, levels = c("suv", "pickup", "midsize", 
                           "compact", "subcompact", "minivan", "2seater")))
@@ -112,17 +104,13 @@ cars. The most popular is SUV, which is almost twice as many as pickups.
 <img src="figures/animation.gif"
 alt="An animated visualisation with an s-curve shaded area showing the proportion shift from one category (2016) to another (2019). It shows the liberal voters shifting behaviour according to gender identification from the 2016 and 2019 surveys. There are three gender identifications, male, female, and other. Most of the voters remain in the same party where a small fraction of voters with roughly equal male-to-female ratio switch to other major parties such as Labor, Greens, and National. Some decided not to vote. People who identified themselves as other have all shifted to the Green Party." />
 
-**Alt text:** An animated visualisation with an s-curve shaded area
-showing the proportion shift from one category (2016) to another (2019).
-It shows the liberal voters shifting behaviour according to gender
-identification from the 2016 and 2019 surveys. There are three gender
-identifications, male, female, and other. Most of the voters remain in
-the same party where a small fraction of voters with roughly equal
-male-to-female ratio switch to other major parties such as Labor,
-Greens, and National. Some decided not to vote. People who identified
-themselves as other have all shifted to the Green Party.
+**Alt text**: An animated visualisation with s-curve shaded area showing
+the flow of Liberal voters from 2016 to the various parties in 2019,
+with people represented by dots coloured by their gender identification
+in the 2016 and 2019 surveys. There are three gender identifications,
+male, female, and other. Some Liberal did not vote in 2019.
 
-**Caption:** The wallaby plot visualization shows how the top party
+**Caption**: The wallaby plot visualization shows how the top party
 performs in keeping the old voters of different genders. Most voters
 remain loyal to the party, but a small fraction of voters with roughly
 equal male-to-female ratio switch primarily to the other major party.
