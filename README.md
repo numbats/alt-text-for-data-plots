@@ -89,7 +89,7 @@ on palmer penguin data. Three species of penguins are plotted with bill
 depth on the x-axis and bill length on the y-axis. Visit the online
 article to access the interactive version made with the plotly package.
 
-## Using BrailleR to auto-generate
+## Using BrailleR to partially auto-generate
 
 The [BrailleR](http://ajrgodfrey.github.io/BrailleR/index.html) package
 provides a text description of a plot that is generated using
@@ -109,10 +109,12 @@ VI(p)
 ## The chart is a set of 342 big solid circle points of which about 95% can be seen.
 ```
 
-There are some differences to the alt text manually written. This is
-focused on how the plot is constructed, which matches half of the
-content. The missing part is the description of the patterns that can be
-seen, which is very difficult to automate.
+This is focused on how the plot is constructed, which matches half of
+the content. Note that, there are differences to the alt text we
+manually wrote. The missing part is the description of the patterns in
+the plot that can be seen. This is very difficult to automate. Thus the
+BrailleR package can provide a start to the alt text but additional
+information needs to be added.
 
 ### Interactive elements can enhance accessibility
 
