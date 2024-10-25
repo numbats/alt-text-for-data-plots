@@ -76,6 +76,31 @@ it was a democratic party win or not. The median margin is smaller and
 the margin is more varied, when it was a state won by the democrats.
 There is one democratic state with a massive margin of 80%.
 
+### Lineplot
+
+``` r
+library(dplyr)
+tb <- readr::read_csv(here::here("data/TB_notifications_2023-08-21.csv")) |>
+  filter(iso3 == "AUS") |> 
+  filter(year > 1996)
+
+ggplot(tb, aes(x = year, y = c_newinc)) +
+  geom_line() +
+  scale_x_continuous("Year", breaks = seq(1980, 2020, 10)) +
+  ylab("TB incidence")
+```
+
+<img src="figures/lineplot-1.png" alt="A lineplot of Tuberculosis incidence on the y-axis and year on the x-axis. The year ranges from 1997 to 2021, with the tick mark on the x-axis at 2000, 2010, and 2022. The TB incidence has a tick mark of 1000, 1200, 1400, and 1600. The trend of the line is increasing." width="40%" />
+
+**Alt text**: A lineplot of Tuberculosis incidence on the y-axis and
+year on the x-axis. The year ranges from 1997 to 2021, with the tick
+mark on the x-axis at 2000, 2010, and 2022. The TB incidence has a tick
+mark of 1000, 1200, 1400, and 1600. The trend of the line is increasing.
+
+**Caption**: Examining the number of Tuberculosis incidences from 1997
+to 2021. The number of incidences has been increasing over the years,
+with the highest number of TB incidences in 2020 and the lowest in 1998.
+
 ### Barchart
 
 ``` r
@@ -89,12 +114,12 @@ ggplot(mpg, aes(x=class, weight = displ)) +
   xlab("")
 ```
 
-<img src="figures/barchart-1.png" alt="Bar chart of numbers of different classes of vehicles. Counts range from 25 to 275. There are 7 classes of vehicle: suv, pickup, midsize, compact, subcompact, minivan, 2seater, corresponding to the order og highest to lowest count." width="40%" />
+<img src="figures/barchart-1.png" alt="Bar chart of numbers of different classes of vehicles. Counts range from 25 to 275. There are 7 classes of vehicle: suv, pickup, midsize, compact, subcompact, minivan, 2seater, corresponding to the order of highest to lowest count." width="40%" />
 
 **Alt text**: Bar chart of numbers of different classes of vehicles.
 Counts range from 25 to 275. There are 7 classes of vehicle: suv,
 pickup, midsize, compact, subcompact, minivan, 2seater, corresponding to
-the order og highest to lowest count.
+the order of highest to lowest count.
 
 **Caption**: Examining the relative popularity of different types of
 cars. The most popular is SUV, which is almost twice as many as pickups.
