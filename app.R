@@ -1,6 +1,9 @@
 library(shiny)
 
-types <- c("Scatterplot", "Barplot", "Lineplot", "Boxplot", "Diagram", "Animation")
+example <- readLines(here::here("example.md"))
+
+types <- grep("###", example, value = TRUE) |>
+  stringr::str_remove_all("### ")
 
 ui <- fillPage(
 
@@ -59,25 +62,19 @@ ui <- fillPage(
 server <- function(input, output) {
 
   output$example <- renderUI({
-    file <- switch(input$plot_type,
-                   Scatterplot = "pages/scatterplot.md",
-                   Barplot = "pages/barplot.md",
-                   Lineplot = "pages/lineplot.md",
-                   Boxplot = "pages/boxplot.md",
-                   Diagram = "pages/diagram.md",
-                   Animation = "pages/animation.md"
-                   )
+    name <- paste0(stringr::str_remove_all(input$plot_type, " "), ".md") |> tolower()
+    file <- here::here(glue::glue("pages/{name}"))
     includeMarkdown(file)
   })
 
   output$plots <- renderImage({
     file <- switch(input$plot_type,
-                   Scatterplot = "scatterplot.png",
-                   Barplot = "barplot.png",
-                   Lineplot = "lineplot.png",
-                   Boxplot = "boxplot.png",
-                   Diagram = "diagram.png",
-                   Animation = "animation.gif")
+                   `Scatterplot` = "resid-plot-1.png",
+                   `Barchart` = "barchart-1.png",
+                   `Lineplot` = "lineplot-1.png",
+                   `Boxplot` = "boxplot-1.png",
+                   `Data diagram` = "diagram-1.png",
+                   `Animated visualisation`  = "animation-1.gif")
 
     list(src = here::here(glue::glue("figures/{file}")),
          width = '100%',

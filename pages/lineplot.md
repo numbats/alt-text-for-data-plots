@@ -1,0 +1,2 @@
+**Alt text**: A lineplot of Tuberculosis incidence on the y-axis and year on the x-axis. The year ranges from 1997 to 2021, with the tick mark on the x-axis at 2000, 2010, and 2022. The TB incidence has a tick mark of 1000, 1200, 1400, and 1600. The trend of the line is increasing.  
+**Caption**: Examining the number of Tuberculosis incidences from 1997 to 2021. The number of incidences has been increasing over the years, with the highest number of TB incidences in 2020 and the lowest in 1998.  
